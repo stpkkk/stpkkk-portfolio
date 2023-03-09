@@ -6,6 +6,7 @@ module.exports = {
       primary: 'Orbitron',
       secondary: 'Rajdhani',
       tertiary: 'Aldrich',
+      title: 'DM Serif Display',
     },
     container: {
       padding: {
@@ -24,7 +25,7 @@ module.exports = {
         accent: '#B809C3',
       },
       backgroundImage: {
-        site: "url('./assets/site-bg.jpg')",
+        site: "url('./assets/site-bg3.png')",
         about: "url('./assets/about.png')",
         services: "url('./assets/services.png')",
       },
