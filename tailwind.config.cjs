@@ -17,7 +17,7 @@ module.exports = {
       sm: '640px',
       md: '768px',
       lg: '960px',
-      xl: '1200px',
+      xl: { max: '1200px' },
     },
     extend: {
       colors: {
@@ -25,7 +25,7 @@ module.exports = {
         accent: '#B809C3',
       },
       backgroundImage: {
-        site: "url('./assets/site-bg3.png')",
+        site: "url('./assets/site-bg4.png')",
         about: "url('./assets/about.png')",
         services: "url('./assets/services.png')",
       },
