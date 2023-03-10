@@ -1,8 +1,8 @@
 import React from 'react';
 
-export const Promo = () => {
+export const Promo: React.FC = () => {
   return (
-    <div className="min-h-screen h-screen">
+    <section className="section min-h-screen h-screen" id="home">
       <div className="w-full  p-6 pl-20 absolute top-1/2 overflow-hidden xl:max-w-[870px] xl:top-10 xl:pl-10">
         <p className="uppercase">
           <span>⚪&nbsp;</span>Hello World
@@ -13,6 +13,6 @@ export const Promo = () => {
           <br /> Frontend Developer.
         </h1>
       </div>
-    </div>
+    </section>
   );
 };

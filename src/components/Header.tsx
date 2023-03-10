@@ -3,7 +3,7 @@ import { NavMobile } from './NavMobile';
 import { useMobile } from '../hooks';
 import { Navigation } from './Navigation';
 
-export const Header = () => {
+export const Header: React.FC = () => {
   const isMobile = useMobile();
 
   return <div>{isMobile ? <NavMobile /> : <Navigation />}</div>;
