@@ -8,10 +8,22 @@ export const NavMobile: React.FC = () => {
     <nav className="fixed bottom-2 lg:bottom-8 w-full overflow-hidden z-50">
       <div className="container mx-auto">
         <div className="w-full mx-auto flex justify-between gap-10 align-center shadow-lg max-w-[420px] h-[70px] bg-black/20 backdrop-blur-xl rounded-3xl items-center px-8 text-2xl ">
-          <Link to="home" activeClass="active-mobile" spy={true} smooth={true}>
+          <Link
+            to="home"
+            activeClass="active-mobile"
+            spy={true}
+            smooth={true}
+            offset={-200}
+          >
             <TbHome />
           </Link>
-          <Link to="about" activeClass="active-mobile" spy={true} smooth={true}>
+          <Link
+            to="about"
+            activeClass="active-mobile"
+            spy={true}
+            smooth={true}
+            offset={-200}
+          >
             <TbUserCircle />
           </Link>
           <Link
@@ -19,6 +31,7 @@ export const NavMobile: React.FC = () => {
             activeClass="active-mobile"
             spy={true}
             smooth={true}
+            offset={-200}
           >
             <TbBriefcase />
           </Link>
@@ -27,6 +40,7 @@ export const NavMobile: React.FC = () => {
             activeClass="active-mobile"
             spy={true}
             smooth={true}
+            offset={-200}
           >
             <BsChat />
           </Link>

@@ -6,5 +6,5 @@ import { Navigation } from './Navigation';
 export const Header: React.FC = () => {
   const isMobile = useMobile();
 
-  return <div>{isMobile ? <NavMobile /> : <Navigation />}</div>;
+  return <header>{isMobile ? <NavMobile /> : <Navigation />}</header>;
 };
