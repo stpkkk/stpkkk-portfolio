@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import { TbHome, TbUserCircle, TbBriefcase } from 'react-icons/tb';
-import { GiSkills } from 'react-icons/gi';
 import { BsChat } from 'react-icons/bs';
 
 export const NavMobile: React.FC = () => {
@@ -23,19 +22,10 @@ export const NavMobile: React.FC = () => {
             activeClass="active-mobile"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-30}
           >
             <TbUserCircle />
           </Link>
-          {/* <Link
-            to="skills"
-            activeClass="active-mobile"
-            spy={true}
-            smooth={true}
-            offset={0}
-          >
-            <GiSkills />
-          </Link> */}
           <Link
             to="projects"
             activeClass="active-mobile"

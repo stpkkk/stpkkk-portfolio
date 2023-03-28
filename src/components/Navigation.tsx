@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import { motion } from 'framer-motion';
 
 export const Navigation: React.FC = () => {
   return (
@@ -16,11 +15,6 @@ export const Navigation: React.FC = () => {
             About
           </Link>
         </li>
-        {/* <li>
-          <Link to="skills" activeClass="active-main" spy={true} smooth={true}>
-            Skills
-          </Link>
-        </li> */}
         <li>
           <Link
             to="projects"

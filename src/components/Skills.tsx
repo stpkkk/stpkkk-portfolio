@@ -1,17 +1,38 @@
 import React from 'react';
-import { SiReact } from 'react-icons/si';
-import { IoLogoJavascript } from 'react-icons/io';
-import { SiTypescript } from 'react-icons/si';
-import { SiRedux } from 'react-icons/si';
-import { SiAxios } from 'react-icons/si';
-import { SiTailwindcss } from 'react-icons/si';
-import { SiGit } from 'react-icons/si';
-import { SiNextdotjs } from 'react-icons/si';
-import { SiSass } from 'react-icons/si';
 import styledComponents from '../assets/styled-components.png';
+import { useMobile } from '../hooks';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../motion/variants';
+import {
+  SiReact,
+  SiTypescript,
+  SiRedux,
+  SiAxios,
+  SiTailwindcss,
+  SiGit,
+  SiNextdotjs,
+  SiSass,
+  SiStyledcomponents,
+  SiJavascript,
+} from 'react-icons/si';
+
+const skillList = [
+  { Icon: SiReact, color: '#61dafb' },
+  { Icon: SiJavascript, color: '#efd81d' },
+  { Icon: SiTypescript, color: '#2f74c0' },
+  { Icon: SiRedux, color: '#7046B2' },
+  { Icon: SiAxios, color: '#5527d8' },
+  { Icon: SiNextdotjs, color: '#000513' },
+  { Icon: SiTailwindcss, color: '#38bdf8' },
+  { Icon: SiSass, color: '#c26191' },
+  { Icon: SiStyledcomponents, color: 'pink' },
+  { Icon: SiGit, color: '#e4472a' },
+];
 
 export const Skills: React.FC = () => {
-  return (
+  const isMobile = useMobile();
+
+  const desktopView = (
     <>
       <SiReact
         size={100}
@@ -23,15 +44,6 @@ export const Skills: React.FC = () => {
           zIndex: '5',
         }}
       />
-      <IoLogoJavascript
-        size={100}
-        style={{
-          color: '#efd81d',
-          position: 'absolute',
-          left: '250px',
-          top: '-90px',
-        }}
-      />
       <SiTypescript
         size={40}
         style={{
@@ -39,6 +51,15 @@ export const Skills: React.FC = () => {
           position: 'absolute',
           left: '150px',
           top: '-120px',
+        }}
+      />
+      <SiJavascript
+        size={80}
+        style={{
+          color: '#efd81d',
+          position: 'absolute',
+          left: '250px',
+          top: '-90px',
         }}
       />
       <SiRedux
@@ -64,7 +85,6 @@ export const Skills: React.FC = () => {
         alt="styled-components"
         className="absolute top-32 left-[-110px] w-20"
       />
-
       <SiNextdotjs
         size={60}
         style={{
@@ -104,4 +124,24 @@ export const Skills: React.FC = () => {
       />
     </>
   );
+
+  const mobileView = (
+    <motion.div
+      variants={fadeIn('right', 0.6)}
+      initial="hidden"
+      whileInView={'show'}
+      className="p-[15px]"
+    >
+      <h3 className="mb-[15px]">My stack:</h3>
+      <ul className="flex flex-wrap  max-w-[800px] mx-auto gap-[20px]  after:empty:flex-1 justify-start">
+        {skillList.map(({ Icon, color }, index) => (
+          <li key={index} className="rounded-full">
+            <Icon size={50} style={{ color }} />
+          </li>
+        ))}
+      </ul>
+    </motion.div>
+  );
+
+  return isMobile ? mobileView : desktopView;
 };
