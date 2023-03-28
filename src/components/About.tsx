@@ -2,22 +2,32 @@ import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
+import { Skills } from './Skills';
+import { useMobile } from '../hooks';
 
 export const About: React.FC = () => {
   const { ref, inView, entry } = useInView({
     threshold: 0.5,
   });
 
+  const isMobile = useMobile();
+
   return (
     <section className="section mt-[50px]  sm:mt-[10px]" id="about" ref={ref}>
       <div className="container mx-auto max-w-[1200px] ">
-        <div className="flex items-center  sm:flex-col sm:gap-10">
+        <div className="flex items-center  sm:flex-col sm:gap-10 my-0 mx-auto">
           <motion.div
             variants={fadeIn('right', 0.6)}
             initial="hidden"
             whileInView={'show'}
-            className="bg-myPhoto bg-contain bg-no-repeat min-h-[300px] w-1/2  sm:min-h-[172.5px] "
-          />
+            className="bg-myPhoto relative bg-contain bg-no-repeat min-h-[300px] w-1/2  sm:min-h-[172.5px] "
+          >
+            {!isMobile && (
+              <div className="relative max-w-[585px]">
+                <Skills />
+              </div>
+            )}
+          </motion.div>
           <motion.div
             variants={fadeIn('left', 0.6)}
             initial="hidden"

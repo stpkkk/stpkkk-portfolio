@@ -1,5 +1,5 @@
 import React from 'react';
-import { About, Header, Promo, Contact, Projects } from './components';
+import { About, Header, Promo, Contact, Projects, Skills } from './components';
 
 export const App: React.FC = () => {
   return (
@@ -8,6 +8,7 @@ export const App: React.FC = () => {
         <Header />
         <Promo />
         <About />
+        <Skills />
         <Projects />
         <Contact />
       </div>

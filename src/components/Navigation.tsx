@@ -16,11 +16,11 @@ export const Navigation: React.FC = () => {
             About
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="skills" activeClass="active-main" spy={true} smooth={true}>
             Skills
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link
             to="projects"
