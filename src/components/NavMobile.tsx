@@ -22,7 +22,7 @@ export const NavMobile: React.FC = () => {
             activeClass="active-mobile"
             spy={true}
             smooth={true}
-            offset={-200}
+            offset={-4}
           >
             <TbUserCircle />
           </Link>

@@ -7,6 +7,21 @@
   src: url('../public/fonts/DMSerifDisplayRegular.woff');
   font-weight: 400;
 }
+@font-face {
+  font-family: 'Roboto';
+  src: url('../public/fonts/Roboto-Bold.woff2');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../public/fonts/Roboto-Regular.woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../public/fonts/Roboto-Light.woff2');
+  font-weight: 300;
+}
 
 * {
   box-sizing: border-box;
@@ -57,7 +72,7 @@
 
 @layer base {
   body {
-    @apply font-secondary text-lg leading-8 text-white;
+    @apply font-primary text-lg leading-6 text-white;
   }
   .h2 {
     @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
@@ -81,6 +96,6 @@
     @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
   }
   .section {
-    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+    @apply py-8 lg:py-24 lg:h-screen flex items-center sm:pb-0;
   }
 }

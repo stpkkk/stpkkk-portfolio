@@ -3,8 +3,7 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
-      primary: 'Orbitron',
-      secondary: 'Rajdhani',
+      primary: 'Roboto',
       tertiary: 'Aldrich',
       title: 'DM Serif Display',
     },
@@ -26,7 +25,7 @@ module.exports = {
       },
       backgroundImage: {
         site: "url('./assets/site-bg4.png')",
-        about: "url('./assets/about.png')",
+        myPhoto: "url('./assets/hero.png')",
         services: "url('./assets/services.png')",
       },
     },
