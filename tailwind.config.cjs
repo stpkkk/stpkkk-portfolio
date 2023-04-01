@@ -16,6 +16,7 @@ module.exports = {
       sm: { max: '640px' },
       md: '768px',
       lg: '960px',
+      isMobile: { max: '996px' },
       xl: { max: '1200px' },
     },
     extend: {

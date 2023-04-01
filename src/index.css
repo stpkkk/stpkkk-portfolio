@@ -25,6 +25,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .btn {
@@ -100,6 +102,7 @@
   }
 }
 
+/* animation on Banner: */
 .area {
   background: #4e54c8;
   background: -webkit-linear-gradient(to left, #8ffbbc, #c8894e);
