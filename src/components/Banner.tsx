@@ -12,6 +12,7 @@ export const Banner: React.FC = () => {
     { Icon: BsLinkedin, link: 'https://www.linkedin.com/in/igor-stepanov1' },
     { Icon: FaTelegramPlane, link: 'https://t.me/stpkk' },
   ];
+
   return (
     <section className="section h-screen" id="home">
       <div>
