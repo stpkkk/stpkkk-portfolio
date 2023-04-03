@@ -47,13 +47,17 @@ export const Banner: React.FC = () => {
             <br />a creative
             <br /> Frontend Developer.
           </h1>
-          <ul className="flex gap-x-3 pt-3">
+          <ul className="flex gap-x-5 pt-3">
             {links.map(({ Icon, link }, index) => (
-              <li key={index}>
+              <motion.li
+                key={index}
+                whileHover={{ scale: 1.5 }}
+                whileTap={{ scale: 0.9 }}
+              >
                 <a href={link} target={'_blank'}>
                   <Icon size={30} />
                 </a>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </motion.div>
