@@ -21,6 +21,7 @@ export const Navigation: React.FC = () => {
             activeClass="active-main"
             spy={true}
             smooth={true}
+            offset={-70}
           >
             Projects
           </Link>

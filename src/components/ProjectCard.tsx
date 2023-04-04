@@ -23,7 +23,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ card, index }) => {
       variants={fadeIn('down', 0.6)}
       initial="hidden"
       whileInView={'show'}
-      className="relative bg-cover bg-center max-w-[500px] w-full min-h-[350px] bg-[#1e1e1e] rounded-lg "
+      className="relative bg-cover bg-center max-w-[500px] w-full min-h-[350px] rounded-lg"
       style={{ backgroundImage: `url(${card.image})` }}
       onMouseEnter={() => handleMouseEnter(index)}
       onMouseLeave={() => handleMouseLeave(index)}
@@ -34,10 +34,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ card, index }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="flex flex-col p-[20px] absolute bottom-0 left-0 right-0 bg-[#1e1e1e] bg-opacity-80 transition-opacity duration-300 h-full w-full  rounded-lg backdrop-blur-md "
+            className="flex flex-col p-[20px] absolute bottom-0 left-0 right-0 bg-[#ffffff10] bg-opacity-80 transition-opacity duration-300 h-full w-full  rounded-lg backdrop-blur-[12px] "
           >
             <div className="flex flex-col h-full ">
-              <div className="text-[16px]">{card.description}</div>
+              <div className="text-[16px] sm:text-[14px]">
+                {card.description}
+              </div>
               <div className="flex gap-5 ml-auto mt-auto mb-4 mr-4">
                 <a className="btn-link" href={card.liveLink} target="_blank">
                   View Live

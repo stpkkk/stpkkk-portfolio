@@ -28,7 +28,7 @@ export const getProjectCards = [
   {
     image: Lamborghini,
     description:
-      'This website is built using React, utilizes Typescript and Styled components.This website is built to be efficient and fast, with the ability to change the layout and design depending on the device used. It can be easily navigated and provide an optimal user experience.It is built with an adaptive design, which means that the layout and functionality of the website automatically adjusts to the user`s device. This allows the website to look great and function well on a wide range of devices, including desktops, laptops, tablets, and smartphones.Made according to the figma layout',
+      'This app is built using React, utilizes Typescript and Styled components also built to be efficient and fast, with the ability to change the layout and design depending on the device used. It is built with an adaptive design, which means that the layout and functionality of the website automatically adjusts to the user`s device. Made according to the figma layout',
     liveLink: 'https://lamborghini-super-trofeo.netlify.app/',
     codeLink: 'https://github.com/stpkkk/lamborghini-super-trofeo',
   },

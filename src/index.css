@@ -77,7 +77,7 @@
     @apply font-primary text-lg leading-6 text-white;
   }
   .h2 {
-    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
+    @apply font-primary text-3xl mb-10  sm:mr-auto tracking-[10%] uppercase sm:mb-5 sm:text-2xl;
   }
   .h3 {
     @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
