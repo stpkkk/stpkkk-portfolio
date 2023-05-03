@@ -10,7 +10,7 @@ export const Projects: React.FC = () => {
         id="projects"
       >
         <h2 className="h2">Projects</h2>
-        <ul className="max-w-[1200px] flex flex-wrap justify-center gap-10 w-full  sm:gap-5">
+        <ul className="max-w-[1200px] flex flex-wrap  gap-10 w-full  sm:gap-5">
           {getProjectCards.map((card, index) => (
             <ProjectCard key={index} card={{ ...card }} index={index} />
           ))}

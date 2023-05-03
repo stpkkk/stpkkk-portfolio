@@ -23,7 +23,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ card, index }) => {
       variants={fadeIn('down', 0.6)}
       initial="hidden"
       whileInView={'show'}
-      className="relative bg-cover bg-center max-w-[500px] w-full min-h-[350px] rounded-lg"
+      className="relative bg-cover bg-center max-w-[565px] w-full min-h-[350px] rounded-lg last:mr-auto"
       style={{ backgroundImage: `url(${card.image})` }}
       onMouseEnter={() => handleMouseEnter(index)}
       onMouseLeave={() => handleMouseLeave(index)}

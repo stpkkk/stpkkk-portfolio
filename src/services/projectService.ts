@@ -2,6 +2,7 @@ import ImageGenerator from '../assets/image-generator.png';
 import dqw from '../assets/dqw.png';
 import Welbex from '../assets/welbex-table.png';
 import Lamborghini from '../assets/lamborghini.png';
+import Dashboard from '../assets/dashboard.png';
 
 export const getProjectCards = [
   {
@@ -31,5 +32,12 @@ export const getProjectCards = [
       'This app is built using React, utilizes Typescript and Styled components also built to be efficient and fast, with the ability to change the layout and design depending on the device used. It is built with an adaptive design, which means that the layout and functionality of the website automatically adjusts to the user`s device. Made according to the figma layout',
     liveLink: 'https://lamborghini-super-trofeo.netlify.app/',
     codeLink: 'https://github.com/stpkkk/lamborghini-super-trofeo',
+  },
+  {
+    image: Dashboard,
+    description:
+      'The Dashboard project is a web application that uses technologies like React, Redux Toolkit, TypeScript, Highcharts, and Styled Components to provide users with visual insights and analytics for a specific data set. The application fetches data from a JSON server and uses Highcharts to create customizable and interactive charts',
+    liveLink: 'https://stpkkk-dashboard.netlify.app/',
+    codeLink: 'https://github.com/stpkkk/Dashboard-React',
   },
 ];
