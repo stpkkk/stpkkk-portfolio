@@ -1,5 +1,5 @@
 import ImageGenerator from '../assets/image-generator.png';
-import dqw from '../assets/dqw.png';
+import Technomedia from '../assets/technomedia.png';
 import Welbex from '../assets/welbex-table.png';
 import Lamborghini from '../assets/lamborghini.png';
 import Dashboard from '../assets/dashboard.png';
@@ -13,7 +13,7 @@ export const getProjectCards = [
     codeLink: 'https://github.com/stpkkk/Image-generator-OpenAI-API',
   },
   {
-    image: dqw,
+    image: Technomedia,
     description:
       'A single-page web application with three cards has been implemented: articles, courses and media, each card contains stories, by clicking on the title of the story, the article, course or media of the same name opens.',
     liveLink: 'https://stpk-technomedia.netlify.app/',
